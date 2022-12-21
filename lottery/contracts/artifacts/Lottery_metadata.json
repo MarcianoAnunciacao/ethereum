@@ -6,27 +6,13 @@
 	"output": {
 		"abi": [
 			{
-				"constant": false,
-				"inputs": [
-					{
-						"name": "newMessage",
-						"type": "string"
-					}
-				],
-				"name": "setMessage",
-				"outputs": [],
-				"payable": false,
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
 				"constant": true,
 				"inputs": [],
-				"name": "message",
+				"name": "manager",
 				"outputs": [
 					{
 						"name": "",
-						"type": "string"
+						"type": "address"
 					}
 				],
 				"payable": false,
@@ -34,12 +20,7 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"name": "initialMessage",
-						"type": "string"
-					}
-				],
+				"inputs": [],
 				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "constructor"
@@ -54,7 +35,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Inbox.sol": "Inbox"
+			"contracts/Lottery.sol": "Lottery"
 		},
 		"libraries": {},
 		"optimizer": {
@@ -64,10 +45,10 @@
 		"remappings": []
 	},
 	"sources": {
-		"Inbox.sol": {
-			"keccak256": "0xed3fa5a33ecc75608e9f1482ba83d8989129c0e739f0b5268329d03466f901c5",
+		"contracts/Lottery.sol": {
+			"keccak256": "0x56cf169a0951d9b8d5f1bd4c248e6848883e8266d470c74a700c9ec3d91d5e82",
 			"urls": [
-				"bzzr://6c6a228afb73c7d7ec8910c9c6a15ec60073dcd3ea41e10026bc49e8e6e2269b"
+				"bzzr://7d860ac9de15931503dfd4cd2174320888c86615a34aafa702160ade4ccfd46b"
 			]
 		}
 	},
