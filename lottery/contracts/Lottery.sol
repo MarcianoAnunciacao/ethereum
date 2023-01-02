@@ -21,8 +21,8 @@ contract Lottery{
 
     function pickWinner() public onlyManager{        
         uint256 index = random() % players.length;
-        (isTransfered , ) = players[index].call{this.balance, ""};
-        require(isTransfered, "Error when transfered balance to Winnner.");
+        address sender = players[index];
+        sender.transfer(address(this).balance);
         players = new address[](0);
     }
 
