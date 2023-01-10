@@ -3,8 +3,8 @@ const Web3 = require('web3');
 const { interface, bytecode} = require('./compile');
 
 const provider = new HDWalletProvider(
-    'naive grab army loud ramp era surround wrestle discover garbage obey have',
-    'https://goerli.infura.io/v3/edc8a92e9bb0490aaac8ab218641ca55'
+    'bf8584394ea45e43113790324d7d1d1c716cde390bd1f1e86691ef71677d070d',
+    'http://127.0.0.1:8545'
 );
 
 const web3 = new Web3(provider);
