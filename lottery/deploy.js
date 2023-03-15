@@ -3,8 +3,8 @@ const Web3 = require('web3');
 const { interface, bytecode} = require('./compile');
 
 const provider = new HDWalletProvider(
-    'legend judge organ gospel load scan panic lava large hedgehog print hidden',
-    'https://goerli.infura.io/v3/edc8a92e9bb0490aaac8ab218641ca55'
+    'bf8584394ea45e43113790324d7d1d1c716cde390bd1f1e86691ef71677d070d',
+    'http://127.0.0.1:8545'
 );
 
 const web3 = new Web3(provider);
@@ -16,8 +16,10 @@ const deploy = async () => {
 
     try {
         const result = await new web3.eth.Contract(JSON.parse(interface))
-        .deploy({ data: bytecode, arguments: ['Hi there!'] })
+        .deploy({ data: bytecode })
         .send({ gas: '1000000', from: accounts[0] });
+
+    console.log(interface);
     console.log('Contract deployed to', result.options.address);    
     } catch (error) {
         console.log('Error -> ', error);    

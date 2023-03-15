@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.4.26+commit.4563c3fc"
+		"version": "0.4.17+commit.bdeb9e52"
 	},
 	"language": "Solidity",
 	"output": {
@@ -54,9 +54,8 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Inbox.sol": "Inbox"
+			"Inbox.sol": "Inbox"
 		},
-		"evmVersion": "byzantium",
 		"libraries": {},
 		"optimizer": {
 			"enabled": false,
@@ -65,7 +64,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Inbox.sol": {
+		"Inbox.sol": {
 			"keccak256": "0xed3fa5a33ecc75608e9f1482ba83d8989129c0e739f0b5268329d03466f901c5",
 			"urls": [
 				"bzzr://6c6a228afb73c7d7ec8910c9c6a15ec60073dcd3ea41e10026bc49e8e6e2269b"
