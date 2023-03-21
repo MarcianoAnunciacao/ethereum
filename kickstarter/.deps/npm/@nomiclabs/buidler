@@ -1,0 +1,8 @@
+/**
+ * Minified by jsDelivr using Terser v5.3.0.
+ * Original file: /npm/@nomiclabs/buidler@1.4.8/internal/lib/buidler-lib.js
+ *
+ * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
+ */
+"use strict";var __importDefault=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};const debug_1=__importDefault(require("debug")),context_1=require("../context"),config_loading_1=require("../core/config/config-loading"),errors_1=require("../core/errors"),errors_list_1=require("../core/errors-list"),buidler_params_1=require("../core/params/buidler-params"),env_variables_1=require("../core/params/env-variables"),runtime_environment_1=require("../core/runtime-environment");let ctx,env;if(context_1.BuidlerContext.isCreated()){if(ctx=context_1.BuidlerContext.getBuidlerContext(),void 0===ctx.environment)throw new errors_1.BuidlerError(errors_list_1.ERRORS.GENERAL.LIB_IMPORTED_FROM_THE_CONFIG);env=ctx.environment}else{ctx=context_1.BuidlerContext.createBuidlerContext();const e=env_variables_1.getEnvBuidlerArguments(buidler_params_1.BUIDLER_PARAM_DEFINITIONS,process.env);e.verbose&&debug_1.default.enable("buidler*");const r=config_loading_1.loadConfigAndTasks(e);void 0===e.network&&(e.network=r.defaultNetwork),env=new runtime_environment_1.Environment(r,e,ctx.tasksDSL.getTaskDefinitions(),ctx.extendersManager.getExtenders(),ctx.experimentalBuidlerEVMMessageTraceHooks),ctx.setBuidlerRuntimeEnvironment(env)}module.exports=env;
+//# sourceMappingURL=/sm/a16423cebff9bd4cbc5acb612ff317c4879381925b04dcff2a7ef604061ecd33.map

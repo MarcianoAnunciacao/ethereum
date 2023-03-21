@@ -19,20 +19,33 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "approvers",
-				"outputs": [
-					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
 					}
 				],
+				"name": "approvers",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					}
+				],
+				"name": "aprroveRequest",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -62,7 +75,7 @@
 				],
 				"name": "createRequest",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -107,6 +120,11 @@
 						"internalType": "bool",
 						"name": "complete",
 						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "approvalCount",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -126,7 +144,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Campaign.sol": "Campaign"
+			"contracts/Campaign.sol": "Campaign"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -140,12 +158,20 @@
 		"remappings": []
 	},
 	"sources": {
-		"Campaign.sol": {
-			"keccak256": "0x30648b00c56e3b7ca13876ec3733007b0f71d538507e190de8d6704367c8df92",
+		"contracts/Campaign.sol": {
+			"keccak256": "0x61652ed270209f56c249e240afabf1b9542751a80586968754515c2376bff8b7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://24307a3b2a33c4b23d70d13ea092fde3b1bf9daf9ccb6727eb8ffaa6847230b5",
-				"dweb:/ipfs/Qmeat6YqkSPQ27ZwpRNWbDNjmGyyFsdhrwwNCRsMtm5qHu"
+				"bzz-raw://d41181ff0b71d344794c88097d8b970abbbae107a21cd6a7fc9d96951648ee38",
+				"dweb:/ipfs/QmWZNifvKbzz7oAWiWivD5bwSriQFCssd3muKzcKoyhrpK"
+			]
+		},
+		"hardhat/console.sol": {
+			"keccak256": "0x60b0215121bf25612a6739fb2f1ec35f31ee82e4a8216c032c8243d904ab3aa9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6e29880d33dd479bb046ba306993d26ccb779a4b1d94a046cb3567f22948bb4d",
+				"dweb:/ipfs/QmfTY1qzPt5C63Wc7y6JqfZr5899NRvXYdCpyLzR5FXQic"
 			]
 		}
 	},
